@@ -1,0 +1,24 @@
+﻿<Window x:Class="SchoolSystem.Views.Cadastros"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolSystem.Views"
+        mc:Ignorable="d"
+        Title="Cadastros" Height="546" Width="700"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF66FFCC"/>
+                <GradientStop Color="#FF66CCFF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock Grid.Row="0" Text="Login" FontSize="50px" HorizontalAlignment="Center"/>
+        
+        <Button x:Name="btCadastroEsc" Content="Cadastrar Escola" HorizontalAlignment="Center" Margin="0,159,0,0" VerticalAlignment="Top" Width="472" Height="50" FontFamily="Segoe UI Semibold" FontSize="30" Background="White" Foreground="Black" RenderTransformOrigin="0.5,0.5" Click="btCadastrarEsc_Click"></Button>
+        <Button x:Name="btListaEsc" Content="Listar Escola" HorizontalAlignment="Center" VerticalAlignment="Center" Width="472" Height="50" FontFamily="Segoe UI Semibold" FontSize="30" Background="White" Foreground="black" RenderTransformOrigin="0.5,0.5" Click="btListarEsc_Click"/>
+        <Button x:Name="btCadastroCur" Content="Cadastrar Curso" HorizontalAlignment="Center" Margin="0,322,0,0" VerticalAlignment="Top" Width="472" Height="50" FontFamily="Segoe UI Semibold" FontSize="30" Background="White" Foreground="Black" RenderTransformOrigin="0.5,0.5" Click="btCadastrarCur_Click"></Button>
+        <Button x:Name="btListaCur" Content="Listar Curso" HorizontalAlignment="Center" Margin="0,401,0,0" VerticalAlignment="Top" Width="472" Height="50" FontFamily="Segoe UI Semibold" FontSize="30" Background="White" Foreground="Black" RenderTransformOrigin="0.5,0.5" Click="btListarCur_Click"></Button>
+    </Grid>
+</Window>
